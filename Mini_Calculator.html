@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Calculater - Assignment</title>
+  </head>
+  <body>
+    <input type="number" id="num_1" placeholder="Enter 1st Number" />
+    <input type="number" id="num_2" placeholder="Enter 2nd Number" />
+
+    <br />
+    <br />
+    &nbsp;
+
+    <button id="add" onclick="addNumber()">Add</button>
+
+    &nbsp;
+
+    <button id="subtract" onclick="subtractNumber()">Subtract</button>
+
+    &nbsp;
+
+    <button id="multi" onclick="multipleNumber()">Multiple</button>
+
+    &nbsp;
+
+    <button id="divide" onclick="divideNumber()">Divide</button>
+  </body>
+</html>
+<script>
+  let num1 = document.getElementById("num_1");
+  let num2 = document.getElementById("num_2");
+
+  function addNumber() {
+    let val_1 = +num1.value;
+    let val_2 = +num2.value;
+
+    let add = val_1 + val_2;
+
+    alert("Answer is - " + add);
+
+    num1.value = "";
+    num2.value = "";
+  }
+  function subtractNumber() {
+    let val_1 = +num1.value;
+    let val_2 = +num2.value;
+
+    let sub = val_1 - val_2;
+
+    alert("Answer is - " + sub);
+
+    num1.value = "";
+    num2.value = "";
+  }
+  function multipleNumber() {
+    let val_1 = +num1.value;
+    let val_2 = +num2.value;
+
+    let multi = val_1 * val_2;
+
+    alert("Answer is - " + multi);
+
+    num1.value = "";
+    num2.value = "";
+  }
+  function divideNumber() {
+    let val_1 = +num1.value;
+    let val_2 = +num2.value;
+
+    let div = val_1 / val_2;
+
+    alert("Answer is - " + div);
+
+    num1.value = "";
+    num2.value = "";
+  }
+</script>
